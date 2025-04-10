@@ -1,0 +1,139 @@
+/* fontes do google fonts para um ar clássico e gotico */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=EB+Garamond&display=swap');
+
+/*  corpo da pagina */
+body {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* titulos dramatico e chamativos*/
+h1, h2, h3 {
+  font-family: 'UnifrakturCook', cursive;
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 2.5rem;
+  color: #e60000;
+  text-shadow: 0 0 10px #880000;
+}
+
+/* estrutura central da página */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/*lista de usuárs*/
+.lista {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+}
+
+.lista li {
+  background-color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  border-left: 5px solid #e60000;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #222;
+}
+
+/* botoes*/
+.botoes {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #b30000;
+  transform: scale(1.05);
+}
+
+/* fundo modal  */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url('../public/crepusculo.webp');
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* conteudo modal*/
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 15px #990000;
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'EB Garamond', serif;
+}
+
+.modal-content h2 {
+  font-family: 'UnifrakturCook', cursive;
+  margin: 0 0 1rem;
+  color: #e60000;
+  text-align: center;
+}
+
+.modal-content button {
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* efeito modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* inputs */
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #f2f2f2;
+  border-radius: 5px;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+}
